@@ -1,0 +1,173 @@
+.contacts__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 117px 103px 123px;
+  width: $vp-1366;
+  text-align: left;
+
+  @include vp-1365 {
+    padding: 100px 6%;
+    width: auto;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    flex-direction: column-reverse;
+    padding: 59px 5% 70px;
+  }
+}
+
+.contacts__map-wrapper {
+  width: 560px;
+  height: 306px;
+  background-image: url("../img/content/map.jpg");
+  background-size: 100% 306px;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+
+  @include retina {
+    background-image: url("../img/content/map-2x.jpg");
+  }
+
+  @include vp-1365 {
+    height: 335px;
+    width: 48%;
+    background-image: url("../img/content/map-tablet.jpg");
+    background-size: 100% 335px;
+
+    @include retina {
+      background-image: url("../img/content/map-tablet-2x.jpg");
+    }
+  }
+
+  @include vp-767 {
+    height: 316px;
+    width: 100%;
+    background-image: url("../img/content/map-mobile.jpg");
+    background-size: 100% 316px;
+
+    @include retina {
+      background-image: url("../img/content/map-mobile-2x.jpg");
+    }
+  }
+}
+
+.contacts__map-wrapper iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.contacts__text-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: left;
+  padding-top: 76px;
+  width: 500px;
+
+  @include vp-1365 {
+    padding-top: 68px;
+    width: 48%;
+  }
+
+  @include vp-767 {
+    padding-top: 0;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+}
+
+.contacts__text-wrapper p {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 33px;
+
+  @include vp-1365 {
+    margin-bottom: 27px;
+  }
+}
+
+.contacts__text-wrapper br {
+  display: none;
+
+  @include vp-1365 {
+    display: block;
+  }
+}
+
+.contacts__text-wrapper span {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 21px;
+  padding-left: 28px;
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 20px;
+    height: 22px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("../img/svg/mark-place.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include vp-1365 {
+      top: 3px;
+    }
+
+    @include vp-767 {
+      top: 5px;
+    }
+  }
+}
+
+.contacts__text-wrapper a {
+  font-size: 16px;
+  line-height: 24px;
+  color: inherit;
+  padding-left: 28px;
+  margin-bottom: 21px;
+  position: relative;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &::before {
+    content: "";
+    width: 18px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url("../img/svg/phone.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @include vp-1365 {
+      top: 3px;
+    }
+
+    @include vp-767 {
+      top: 2px;
+    }
+  }
+}

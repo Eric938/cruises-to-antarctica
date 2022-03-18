@@ -1,0 +1,30 @@
+.button {
+  display: block;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  padding: 10px 20px;
+  width: 100%;
+  color: $color-tangaroa;
+  background-color: $color-alice-blue;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+
+  &:disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.8;
+    }
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
