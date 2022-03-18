@@ -3,20 +3,17 @@
   background-position: center;
   background-repeat: no-repeat;
   background-color: $color-solitude;
-  background-size: 100% auto;
+  background-size: cover;
 
   @include retina {
     background-image: url("../img/content/benefits-back-2x.jpg");
-    background-size: 100% 562px;
   }
 
   @include vp-1365 {
     background-image: url("../img/content/benefits-back-tablet.jpg");
-    background-size: cover;
 
     @include retina {
       background-image: url("../img/content/benefits-back-tablet-2x.jpg");
-      background-size: 100% 588px;
     }
   }
 
@@ -25,14 +22,13 @@
 
     @include retina {
       background-image: url("../img/content/benefits-back-mobile-2x.jpg");
-      background-size: 100% 997px;
     }
   }
 }
 
 .benefits__wrapper {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin: 0 auto;
   padding: 110px 103px 80px;
   width: $vp-1366;
@@ -57,6 +53,7 @@
   padding: 0;
   margin: 0 auto 48px;
   width: 230px;
+  align-self: center;
 
   @include vp-1365 {
     font-size: 26px;

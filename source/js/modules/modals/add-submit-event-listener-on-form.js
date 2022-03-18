@@ -31,22 +31,18 @@ const addSubmitEventListenerOnForm = () => {
   form.addEventListener('submit', addDataToLocalStorage);
 };
 
+const addDataToInput = (input, data) => {
+  if (input) {
+    if (data) {
+      input.value = data;
+    }
+  }
+};
+
 const addDataToInputs = () => {
-  if (name) {
-    if (nameData) {
-      name.value = nameData;
-    }
-  }
-  if (phone) {
-    if (namePhone) {
-      phone.value = namePhone;
-    }
-  }
-  if (mail) {
-    if (nameMail) {
-      mail.value = nameMail;
-    }
-  }
+  addDataToInput(name, nameData);
+  addDataToInput(phone, namePhone);
+  addDataToInput(mail, nameMail);
 };
 
 export {addSubmitEventListenerOnForm, addDataToInputs};

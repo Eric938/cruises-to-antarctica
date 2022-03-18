@@ -3,11 +3,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-color: $color-prussian-blue;
-  background-size: 100% auto;
+  background-size: cover;
 
   @include retina {
     background-image: url("../img/content/promo-2x.jpg");
-    background-size: 100% 650px;
   }
 
   @include vp-1365 {
@@ -15,7 +14,6 @@
 
     @include retina {
       background-image: url("../img/content/promo-tablet-2x.jpg");
-      background-size: 100% 638px;
     }
   }
 
@@ -24,7 +22,6 @@
 
     @include retina {
       background-image: url("../img/content/promo-mobile-2x.jpg");
-      background-size: 100% 638px;
     }
   }
 }

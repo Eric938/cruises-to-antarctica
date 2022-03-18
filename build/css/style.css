@@ -506,8 +506,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -597,8 +595,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -622,8 +618,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -683,7 +677,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-color: #002b66;
-  background-size: 100% auto;
+  background-size: cover;
 }
 
 .promo__text-wrapper {
@@ -761,15 +755,17 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-color: #e3ecf6;
-  background-size: 100% auto;
+  background-size: cover;
 }
 
 .benefits__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: 0 auto;
   padding: 110px 103px 80px;
   width: 1366px;
@@ -783,6 +779,9 @@ body {
   padding: 0;
   margin: 0 auto 48px;
   width: 230px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .benefits__list {
@@ -864,8 +863,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: 0 auto;
   padding: 110px 118px 90px;
   width: 1366px;
@@ -1012,7 +1013,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-color: #d5edfa;
-  background-size: 100% auto;
+  background-size: cover;
 }
 
 .booking__wrapper {
@@ -1110,6 +1111,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: left;
+  margin-bottom: 5px;
 }
 
 .form__checkbox label {
@@ -1426,7 +1428,6 @@ input[type="checkbox"]:disabled + label::before {
 
   .benefits {
     background-image: url("../img/content/benefits-back-tablet.jpg");
-    background-size: cover;
   }
 
   .benefits__wrapper {
@@ -1509,7 +1510,6 @@ input[type="checkbox"]:disabled + label::before {
 
   .booking {
     background-image: url("../img/content/booking-back-tablet.jpg");
-    background-size: cover;
   }
 
   .booking__wrapper {
@@ -1600,17 +1600,14 @@ input[type="checkbox"]:disabled + label::before {
 @media (max-width: 1365px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1365px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1365px) and (min-resolution: 192dpi), (max-width: 1365px) and (min-resolution: 2dppx) {
   .promo {
     background-image: url("../img/content/promo-tablet-2x.jpg");
-    background-size: 100% 638px;
   }
 
   .benefits {
     background-image: url("../img/content/benefits-back-tablet-2x.jpg");
-    background-size: 100% 588px;
   }
 
   .booking {
     background-image: url("../img/content/booking-back-tablet-2x.jpg");
-    background-size: 100% 805px;
   }
 
   .contacts__map-wrapper {
@@ -1860,6 +1857,7 @@ input[type="checkbox"]:disabled + label::before {
   }
 
   .description__wrapper img {
+    margin: 0 auto;
     width: 290px;
     height: 186px;
   }
@@ -2020,7 +2018,7 @@ input[type="checkbox"]:disabled + label::before {
   .form__checkbox label {
     padding: 0;
     padding-left: 26px;
-    width: 80%;
+    width: 180px;
   }
 
   input[type="checkbox"] + label::before {
@@ -2077,17 +2075,14 @@ input[type="checkbox"]:disabled + label::before {
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 192dpi), (max-width: 767px) and (min-resolution: 2dppx) {
   .promo {
     background-image: url("../img/content/promo-mobile-2x.jpg");
-    background-size: 100% 638px;
   }
 
   .benefits {
     background-image: url("../img/content/benefits-back-mobile-2x.jpg");
-    background-size: 100% 997px;
   }
 
   .booking {
     background-image: url("../img/content/booking-back-mobile-2x.jpg");
-    background-size: 100% 760px;
   }
 
   .contacts__map-wrapper {
@@ -2098,17 +2093,14 @@ input[type="checkbox"]:disabled + label::before {
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .promo {
     background-image: url("../img/content/promo-2x.jpg");
-    background-size: 100% 650px;
   }
 
   .benefits {
     background-image: url("../img/content/benefits-back-2x.jpg");
-    background-size: 100% 562px;
   }
 
   .booking {
     background-image: url("../img/content/booking-back-2x.jpg");
-    background-size: 100% 555px;
   }
 
   .contacts__map-wrapper {
