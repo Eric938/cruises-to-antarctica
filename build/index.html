@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Сайт туристического агенства, организующего круизы в Антарктику">
     <title>Круизы в Антарктику</title>
-    <link rel="preload" href="fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/montserrat-regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="fonts/montserrat-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/montserrat-bold.woff" as="font" type="font/woff" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="body">
@@ -27,7 +28,7 @@
             <use xlink:href="img/sprite_auto.svg#menu"></use>
           </svg>
         </button>
-        <div class="modal modal--preload" data-modal="menu">
+        <div class="modal" data-modal="menu">
           <div class="modal__wrapper">
             <div class="modal__overlay" data-close-modal></div>
             <nav class="header__nav nav modal__nav">
@@ -80,7 +81,7 @@
 
 
             <!-- 1х: 560px; 2x: 1120px -->
-            <img src="img/content/penguins.jpg" width="560" height="301" srcset="img/content/penguins-2x.jpg 2x" alt="Три пингвина">
+            <img src="img/content/penguins.jpg" width="560" height="301" srcset="img/content/penguins-2x.jpg 2x" alt="Три пингвина" loading="lazy">
           </picture>
         </div>
       </section>
@@ -123,7 +124,7 @@
 
 
                   <!-- 1х: 260px; 2x: 520px -->
-                  <img src="img/content/astoria.jpg" width="260" height="386" srcset="img/content/astoria-2x.jpg 2x" alt="Лед на фоне горы">
+                  <img src="img/content/astoria.jpg" width="260" height="386" srcset="img/content/astoria-2x.jpg 2x" alt="Лед на фоне горы" loading="lazy">
                 </picture>
                 <span>Круиз “Астория”</span>
               </div>
@@ -167,7 +168,7 @@
 
 
                   <!-- 1х: 260px; 2x: 520px -->
-                  <img src="img/content/astoria.jpg" width="260" height="386" srcset="img/content/astoria-2x.jpg 2x" alt="Лед на фоне горы">
+                  <img src="img/content/astoria.jpg" width="260" height="386" srcset="img/content/astoria-2x.jpg 2x" alt="Лед на фоне горы" loading="lazy">
                 </picture>
                 <span>Круиз “Элайн”</span>
               </div>
@@ -211,7 +212,7 @@
 
 
                   <!-- 1х: 260px; 2x: 520px -->
-                  <img src="img/content/atlantis.jpg" width="260" height="386" srcset="img/content/atlantis-2x.jpg 2x" alt="Ледники плавающие в воде">
+                  <img src="img/content/atlantis.jpg" width="260" height="386" srcset="img/content/atlantis-2x.jpg 2x" alt="Ледники плавающие в воде" loading="lazy">
                 </picture>
                 <span>Круиз “Атлантис”</span>
               </div>
@@ -255,7 +256,7 @@
 
 
                   <!-- 1х: 260px; 2x: 520px -->
-                  <img src="img/content/odysseus.jpg" width="260" height="386" srcset="img/content/odysseus-2x.jpg 2x" alt="Голубое небо, озеро в середине и покрытые снегом горы">
+                  <img src="img/content/odysseus.jpg" width="260" height="386" srcset="img/content/odysseus-2x.jpg 2x" alt="Голубое небо, озеро в середине и покрытые снегом горы" loading="lazy">
                 </picture>
                 <span>Круиз “Одиссей”</span>
               </div>
@@ -299,7 +300,7 @@
 
 
                   <!-- 1х: 260px; 2x: 520px -->
-                  <img src="img/content/olympia.jpg" width="260" height="386" srcset="img/content/olympia-2x.jpg 2x" alt="Группа пингвинов на фоне большого ледника">
+                  <img src="img/content/olympia.jpg" width="260" height="386" srcset="img/content/olympia-2x.jpg 2x" alt="Группа пингвинов на фоне большого ледника" loading="lazy">
                 </picture>
                 <span>Круиз “Олимпия”</span>
               </div>
@@ -343,7 +344,7 @@
 
 
                   <!-- 1х: 260px; 2x: 520px -->
-                  <img src="img/content/aurora.jpg" width="260" height="386" srcset="img/content/aurora-2x.jpg 2x" alt="Большой ледник на заднем плане и несколько маленьких плавают в воде">
+                  <img src="img/content/aurora.jpg" width="260" height="386" srcset="img/content/aurora-2x.jpg 2x" alt="Большой ледник на заднем плане и несколько маленьких плавают в воде" loading="lazy">
                 </picture>
                 <span>Круиз “Аврора”</span>
               </div>
@@ -387,7 +388,7 @@
 
 
                   <!-- 1х: 260px; 2x: 520px -->
-                  <img src="img/content/leonor.jpg" width="260" height="386" srcset="img/content/leonor-2x.jpg 2x" alt="Лодка посреди океана">
+                  <img src="img/content/leonor.jpg" width="260" height="386" srcset="img/content/leonor-2x.jpg 2x" alt="Лодка посреди океана" loading="lazy">
                 </picture>
                 <span>Круиз “Леонор”</span>
               </div>
@@ -431,7 +432,7 @@
 
 
                   <!-- 1х: 260px; 2x: 520px -->
-                  <img src="img/content/minion.jpg" width="260" height="386" srcset="img/content/minion-2x.jpg 2x" alt="Гора, засыпанная снего на заднем плане и пингвины и спускающиеся к воле на переднем">
+                  <img src="img/content/minion.jpg" width="260" height="386" srcset="img/content/minion-2x.jpg 2x" alt="Гора, засыпанная снего на заднем плане и пингвины и спускающиеся к воле на переднем" loading="lazy">
                 </picture>
                 <span>Круиз “Минион - 1”</span>
               </div>
@@ -501,7 +502,7 @@
         <h2 class="visually-hidden">Где нас найти</h2>
         <div class="contacts__wrapper">
           <div class="contacts__map-wrapper">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1646993483081!5m2!1sru!2sru" width="560" height="306" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1646993483081!5m2!1sru!2sru" width="560" height="306" style="border:0;" allowfullscreen="" loading="lazy" title="карта с расположением офиса"></iframe>
           </div>
           <div class="contacts__text-wrapper">
             <p>У&nbsp;вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.</p>
@@ -521,7 +522,7 @@
               <picture>
                 <source media="(max-width: 767px)" srcset="img/svg/logo-mobile.svg">
                 <source media="(max-width: 1365px)" srcset="img/svg/logo-tablet.svg">
-                <img src="img/svg/logo.svg" width="70" height="38" alt="Логотип">
+                <img src="img/svg/logo.svg" width="70" height="38" alt="Логотип" loading="lazy">
               </picture>
             </a>
           </div>

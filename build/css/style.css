@@ -483,15 +483,6 @@ img {
   overflow: hidden;
 }
 
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-
 body {
   display: -ms-grid;
   display: grid;
@@ -545,16 +536,6 @@ body {
   font-size: inherit;
   line-height: 19px;
   color: #f9fbfd;
-}
-
-.modal::-webkit-scrollbar {
-  display: none;
-}
-
-.modal--preload {
-  -webkit-transition: none;
-  -o-transition: none;
-  transition: none;
 }
 
 .modal__close-btn {
@@ -1199,8 +1180,6 @@ input[type="checkbox"]:disabled + label::before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -1699,7 +1678,6 @@ input[type="checkbox"]:disabled + label::before {
     overflow-y: auto;
     visibility: hidden;
     pointer-events: none;
-    -ms-overflow-style: none;
     scrollbar-width: none;
   }
 
@@ -1739,11 +1717,7 @@ input[type="checkbox"]:disabled + label::before {
   }
 
   .modal.is-active {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
     visibility: visible;
-    opacity: 1;
     pointer-events: auto;
   }
 
@@ -1870,7 +1844,7 @@ input[type="checkbox"]:disabled + label::before {
   }
 
   .description__text-wrapper p {
-    margin-bottom: 24px;
+    margin-bottom: 33px;
   }
 
   .benefits {

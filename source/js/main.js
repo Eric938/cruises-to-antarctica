@@ -7,11 +7,11 @@ import {removeClassNoJsFromHeader} from './modules/modals/remove-class-no-js-fro
 window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
-  addDataToInputs();
   removeClassNoJsFromHeader();
   initModals();
 
   window.addEventListener('load', () => {
     addSubmitEventListenerOnForm();
+    addDataToInputs();
   });
 });
