@@ -5,13 +5,13 @@
 .footer__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  padding: 50px 103px;
+  align-items: center;
+  padding: 51px 103px;
   margin: 0 auto;
   width: $vp-1366;
 
   @include vp-1365 {
-    padding: 46px 6%;
+    padding: 48px 6%;
     width: auto;
   }
 
@@ -28,13 +28,18 @@
 
   @include vp-1365 {
     margin-right: 25px;
-    width: 38px;
-    height: 20px;
   }
 
   @include vp-767 {
     margin-right: 0;
     margin-bottom: 24px;
+  }
+}
+
+.footer__logo img {
+  @include vp-1365 {
+    width: 38px;
+    height: 20px;
   }
 }
 
@@ -45,13 +50,25 @@
 .footer__navigation {
   display: flex;
   align-items: center;
-  margin-right: 50px;
+  margin-right: 20px;
 
   @include vp-767 {
     flex-direction: column;
     align-items: flex-start;
-    margin-bottom: 13px;
+    margin-bottom: 14px;
     margin-right: 0;
+  }
+}
+
+.footer__nav {
+  width: 900px;
+
+  @include vp-1365 {
+    width: 450px;
+  }
+
+  @include vp-767 {
+    width: auto;
   }
 }
 

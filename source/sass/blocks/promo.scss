@@ -26,7 +26,7 @@
   }
 }
 
-.promo__text-wrapper {
+.promo__cruises-title {
   margin: 0 auto;
   padding: 271px 198px 280px;
   width: $vp-1366;
@@ -43,7 +43,7 @@
   }
 }
 
-.promo__text-wrapper h2 {
+.promo__cruises-title h2 {
   font-size: 54px;
   line-height: 66px;
   font-weight: 700;
@@ -65,7 +65,7 @@
   }
 }
 
-.promo__text-wrapper br {
+.promo__cruises-title br {
   display: none;
 
   @include vp-767 {
@@ -73,7 +73,7 @@
   }
 }
 
-.promo__text-wrapper p {
+.promo__cruises-title p {
   font-size: 20px;
   line-height: 24px;
   color: $color-alice-blue;

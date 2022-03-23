@@ -2,6 +2,7 @@ import {Modals} from './modals';
 
 let modals;
 
+
 const settings = {
   'default': {
     preventDefault: true,

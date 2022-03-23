@@ -1,8 +1,8 @@
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  padding: 35px 70px 35px 103px;
+  align-items: center;
+  padding: 35px 103px;
   margin: 0 auto;
   width: $vp-1366;
 
@@ -30,9 +30,15 @@
   pointer-events: none;
 }
 
-.header__logo img {
-  margin-right: 50px;
+.header__logo {
+  margin-right: 20px;
 
+  @include vp-767 {
+    margin-right: 0;
+  }
+}
+
+.header__logo img {
   @include vp-1365 {
     width: 38px;
     height: 20px;
@@ -41,11 +47,14 @@
   @include vp-767 {
     width: 42px;
     height: 32px;
-    margin-right: 0;
   }
 }
 
 .header__nav {
+  @include vp-1365 {
+    width: 501px;
+  }
+
   @include vp-767 {
     position: relative;
     width: 89%;
@@ -67,7 +76,6 @@
 
 .header__nav-list {
   @include vp-767 {
-    position: relative;
     padding: 75px 15px 10px;
     background-color: $color-alice-blue;
     box-sizing: border-box;
@@ -119,9 +127,5 @@
 
   .no-js button {
     display: none;
-  }
-
-  .no-js .header__modal {
-    flex-grow: 1;
   }
 }

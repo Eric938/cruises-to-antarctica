@@ -1,4 +1,4 @@
-.contacts__wrapper {
+.contacts {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -15,11 +15,11 @@
 
   @include vp-767 {
     flex-direction: column-reverse;
-    padding: 59px 5% 70px;
+    padding: 59px 5% 67px;
   }
 }
 
-.contacts__map-wrapper {
+.contacts__map {
   width: 560px;
   height: 306px;
   background-image: url("../img/content/map.jpg");
@@ -55,7 +55,7 @@
   }
 }
 
-.contacts__map-wrapper iframe {
+.contacts__map iframe {
   left: 0;
   top: 0;
   height: 100%;
@@ -63,11 +63,11 @@
   position: absolute;
 }
 
-.contacts__text-wrapper {
+.contacts__office-contact-information {
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding-top: 76px;
+  padding-top: 77px;
   width: 500px;
 
   @include vp-1365 {
@@ -77,12 +77,12 @@
 
   @include vp-767 {
     padding-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     width: 100%;
   }
 }
 
-.contacts__text-wrapper p {
+.contacts__office-contact-information p {
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
@@ -94,7 +94,7 @@
   }
 }
 
-.contacts__text-wrapper br {
+.contacts__office-contact-information br {
   display: none;
 
   @include vp-1365 {
@@ -102,13 +102,21 @@
   }
 }
 
-.contacts__text-wrapper span {
+.contacts__office-contact-information span {
   font-size: 16px;
   line-height: 24px;
   margin: 0;
   margin-bottom: 21px;
   padding-left: 28px;
   position: relative;
+
+  @include vp-1365 {
+    padding-left: 28px;
+  }
+
+  @include vp-767 {
+    padding-left: 27px;
+  }
 
   &::before {
     content: "";
@@ -131,13 +139,22 @@
   }
 }
 
-.contacts__text-wrapper a {
+.contacts__office-contact-information a {
   font-size: 16px;
   line-height: 24px;
   color: inherit;
   padding-left: 28px;
   margin-bottom: 21px;
   position: relative;
+
+  @include vp-1365 {
+    margin-bottom: 19px;
+    padding-left: 28px;
+  }
+
+  @include vp-767 {
+    padding-left: 27px;
+  }
 
   @media (hover: hover), screen and (min-width: 0\0) {
     &:hover,

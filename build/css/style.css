@@ -500,10 +500,10 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  padding: 35px 70px 35px 103px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 35px 103px;
   margin: 0 auto;
   width: 1366px;
 }
@@ -520,8 +520,8 @@ body {
   pointer-events: none;
 }
 
-.header__logo img {
-  margin-right: 50px;
+.header__logo {
+  margin-right: 20px;
 }
 
 .header__nav img {
@@ -551,12 +551,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-}
-
-.nav__item {
-  padding: 0;
-  margin-right: 33px;
-  margin-bottom: 5px;
+  gap: 34px;
 }
 
 .nav__item a {
@@ -579,10 +574,10 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  padding: 50px 103px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 51px 103px;
   margin: 0 auto;
   width: 1366px;
 }
@@ -602,7 +597,11 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-right: 50px;
+  margin-right: 20px;
+}
+
+.footer__nav {
+  width: 900px;
 }
 
 .footer__nav a {
@@ -629,19 +628,16 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  gap: 33px;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.social__item {
-  padding: 0;
-  margin-right: 33px;
-  margin-bottom: 5px;
-}
-
-.social__item:last-child {
-  margin-right: 0;
+.social__item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .social__item a:disabled {
@@ -653,6 +649,12 @@ body {
   opacity: 0.6;
 }
 
+.social__item svg {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
 .promo {
   background-image: url("../img/content/promo.jpg");
   background-position: center;
@@ -661,14 +663,14 @@ body {
   background-size: cover;
 }
 
-.promo__text-wrapper {
+.promo__cruises-title {
   margin: 0 auto;
   padding: 271px 198px 280px;
   width: 1366px;
   text-align: left;
 }
 
-.promo__text-wrapper h2 {
+.promo__cruises-title h2 {
   font-size: 54px;
   line-height: 66px;
   font-weight: 700;
@@ -678,18 +680,18 @@ body {
   margin-bottom: 10px;
 }
 
-.promo__text-wrapper br {
+.promo__cruises-title br {
   display: none;
 }
 
-.promo__text-wrapper p {
+.promo__cruises-title p {
   font-size: 20px;
   line-height: 24px;
   color: #f9fbfd;
   margin: 0;
 }
 
-.description__wrapper {
+.description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -704,20 +706,21 @@ body {
   text-align: left;
 }
 
-.description__text-wrapper {
+.description__travel-information {
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
+  overflow: hidden;
 }
 
-.description__wrapper img {
+.description img {
   width: 560px;
   height: 301px;
   -o-object-fit: cover;
   object-fit: cover;
 }
 
-.description__text-wrapper h2 {
+.description__travel-information h2 {
   font-size: 28px;
   line-height: 42px;
   font-weight: 600;
@@ -726,7 +729,7 @@ body {
   margin-bottom: 21px;
 }
 
-.description__text-wrapper p {
+.description__travel-information p {
   margin: 0;
   width: 512px;
 }
@@ -737,9 +740,6 @@ body {
   background-repeat: no-repeat;
   background-color: #e3ecf6;
   background-size: cover;
-}
-
-.benefits__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -747,13 +747,14 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin: 0 auto;
-  padding: 110px 103px 80px;
-  width: 1366px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 110px 103px 120px;
   text-align: left;
 }
 
-.benefits__wrapper h2 {
+.benefits h2 {
   font-size: 28px;
   line-height: 42px;
   font-weight: 600;
@@ -765,50 +766,42 @@ body {
   align-self: center;
 }
 
-.benefits__list {
+.benefits__cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  gap: 40px;
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 100%;
+  width: 1160px;
 }
 
-.benefits__item {
-  padding: 81px 30px 25px;
+.benefits__card {
+  padding: 30px 30px 25px;
   margin: 0;
-  margin-right: 40px;
-  margin-bottom: 40px;
-  width: 360px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #f9fbfd;
   background-repeat: no-repeat;
+  width: 360px;
 }
 
-.benefits__item:nth-child(3n) {
-  margin-right: 0;
+.benefits__card-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 42px;
+  height: 32px;
 }
 
-.benefits__item--liner {
-  background-image: url("../img/svg/liner.svg");
-  background-position: top 30px left 30px;
-}
-
-.benefits__item--all-inclusive {
-  background-image: url("../img/svg/check-mark.svg");
-  background-position: top 36px left 30px;
-}
-
-.benefits__item--ship {
-  background-image: url("../img/svg/ship.svg");
-  background-position: top 38px left 30px;
-}
-
-.benefits__item h3 {
+.benefits__card h3 {
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
@@ -817,30 +810,23 @@ body {
   margin-bottom: 8px;
 }
 
-.benefits__item p {
+.benefits__card p {
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   margin: 0;
+  width: 288px;
 }
 
-.benefits__item h3 br {
+.benefits__card h3 br {
   display: none;
 }
 
-.benefits__item--all-inclusive p {
-  width: 281px;
-}
-
-.benefits__item--ship p {
-  width: 245px;
-}
-
-.benefits__item--ship br {
+.benefits__card br {
   display: none;
 }
 
-.cruises__wrapper {
+.cruises {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -849,20 +835,20 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   margin: 0 auto;
-  padding: 110px 118px 90px;
+  padding: 110px 118px 120px;
   width: 1366px;
   text-align: left;
 }
 
-.cruises__wrapper h2 {
+.cruises h2 {
   font-size: 28px;
   line-height: 42px;
   font-weight: 600;
   padding: 0;
-  margin: 0 auto 50px;
+  margin: 0 auto 48px;
 }
 
-.cruises__list {
+.cruises__cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -872,28 +858,23 @@ body {
   padding: 0;
   margin: 0;
   width: 100%;
+  gap: 30px;
 }
 
-.cruises__item {
-  margin-right: 30px;
-  margin-bottom: 30px;
+.cruises__card {
   width: 260px;
   height: 386px;
   position: relative;
 }
 
-.cruises__item:nth-child(4n) {
-  margin-right: 0;
-}
-
-.cruises__img-wrapper img {
+.cruises__cruise-card-img img {
   width: 260px;
   height: 386px;
   -o-object-fit: cover;
   object-fit: cover;
 }
 
-.cruises__img-wrapper span {
+.cruises__cruise-card-img span {
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
@@ -904,7 +885,7 @@ body {
   z-index: 2;
 }
 
-.cruises__text-wrapper {
+.cruises__cruise-description {
   display: none;
   background-color: #011c40;
   padding: 28px 25px 35px;
@@ -913,7 +894,7 @@ body {
   box-sizing: border-box;
 }
 
-.cruises__text-wrapper h3 {
+.cruises__cruise-description h3 {
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
@@ -922,11 +903,11 @@ body {
   margin-bottom: 10px;
 }
 
-.cruises__text-wrapper a {
+.cruises__cruise-description a {
   min-height: 40px;
 }
 
-.cruises__text-list {
+.cruises__description-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -937,16 +918,16 @@ body {
   margin-right: -20px;
 }
 
-.cruises__list-wrapper {
+.cruises__description-list-wrapper {
   overflow: hidden;
 }
 
-.cruises__text-item {
+.cruises__description-item {
   margin: 0;
   margin-bottom: 8px;
 }
 
-.cruises__text-item span {
+.cruises__description-item span {
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -954,7 +935,7 @@ body {
   margin-bottom: 5px;
 }
 
-.cruises__text-item p {
+.cruises__description-item p {
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
@@ -995,29 +976,25 @@ body {
   background-repeat: no-repeat;
   background-color: #d5edfa;
   background-size: cover;
-}
-
-.booking__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  margin: 0 auto;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   padding: 50px 163px;
-  width: 1366px;
   text-align: left;
 }
 
-.booking__text-wrapper {
+.booking__early-booking-information {
   padding-top: 162px;
+  margin-right: 136px;
   width: 500px;
 }
 
-.booking__text-wrapper h2 {
+.booking__early-booking-information h2 {
   font-size: 40px;
   line-height: 60px;
   font-weight: 700;
@@ -1026,19 +1003,19 @@ body {
   margin-bottom: 8px;
 }
 
-.booking__text-wrapper p {
+.booking__early-booking-information p {
   font-size: 18px;
   line-height: 27px;
   margin: 0;
   width: 355px;
 }
 
-.booking__text-wrapper br {
+.booking__early-booking-information br {
   display: none;
 }
 
-.booking__modal-wrapper {
-  padding: 43px 50px;
+.booking__modal {
+  padding: 44px 50px;
   width: 403px;
   min-height: 455px;
   background-color: #011c40;
@@ -1046,7 +1023,7 @@ body {
   box-shadow: 0 4px 45px 0 fade(#011c40, 15%);
 }
 
-.booking__modal-wrapper p {
+.booking__modal p {
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
@@ -1055,11 +1032,11 @@ body {
   margin-bottom: 27px;
 }
 
-.booking__modal-wrapper br {
+.booking__modal br {
   display: none;
 }
 
-.form__item input {
+.form__input input {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-family: inherit;
@@ -1075,16 +1052,16 @@ body {
   cursor: pointer;
 }
 
-.form__item input:disabled {
+.form__input input:disabled {
   opacity: 0.9;
   pointer-events: none;
 }
 
-.form__wrapper {
-  margin-bottom: 31px;
+.form__inputs {
+  margin-bottom: 29px;
 }
 
-.form__item {
+.form__input {
   margin-bottom: 20px;
 }
 
@@ -1101,7 +1078,7 @@ body {
   font-size: 10px;
   line-height: 12px;
   margin: 0;
-  padding: 3px 0;
+  padding: 4px 0;
   padding-left: 23px;
   color: #f9fbfd;
   position: relative;
@@ -1143,7 +1120,7 @@ input[type="checkbox"]:disabled + label::before {
   pointer-events: none;
 }
 
-.contacts__wrapper {
+.contacts {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1158,7 +1135,7 @@ input[type="checkbox"]:disabled + label::before {
   text-align: left;
 }
 
-.contacts__map-wrapper {
+.contacts__map {
   width: 560px;
   height: 306px;
   background-image: url("../img/content/map.jpg");
@@ -1168,7 +1145,7 @@ input[type="checkbox"]:disabled + label::before {
   position: relative;
 }
 
-.contacts__map-wrapper iframe {
+.contacts__map iframe {
   left: 0;
   top: 0;
   height: 100%;
@@ -1176,7 +1153,7 @@ input[type="checkbox"]:disabled + label::before {
   position: absolute;
 }
 
-.contacts__text-wrapper {
+.contacts__office-contact-information {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1185,11 +1162,11 @@ input[type="checkbox"]:disabled + label::before {
   -ms-flex-direction: column;
   flex-direction: column;
   text-align: left;
-  padding-top: 76px;
+  padding-top: 77px;
   width: 500px;
 }
 
-.contacts__text-wrapper p {
+.contacts__office-contact-information p {
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
@@ -1197,11 +1174,11 @@ input[type="checkbox"]:disabled + label::before {
   margin-bottom: 33px;
 }
 
-.contacts__text-wrapper br {
+.contacts__office-contact-information br {
   display: none;
 }
 
-.contacts__text-wrapper span {
+.contacts__office-contact-information span {
   font-size: 16px;
   line-height: 24px;
   margin: 0;
@@ -1210,7 +1187,7 @@ input[type="checkbox"]:disabled + label::before {
   position: relative;
 }
 
-.contacts__text-wrapper span::before {
+.contacts__office-contact-information span::before {
   content: "";
   width: 20px;
   height: 22px;
@@ -1222,7 +1199,7 @@ input[type="checkbox"]:disabled + label::before {
   background-position: center;
 }
 
-.contacts__text-wrapper a {
+.contacts__office-contact-information a {
   font-size: 16px;
   line-height: 24px;
   color: inherit;
@@ -1231,11 +1208,11 @@ input[type="checkbox"]:disabled + label::before {
   position: relative;
 }
 
-.contacts__text-wrapper a:active {
+.contacts__office-contact-information a:active {
   opacity: 0.6;
 }
 
-.contacts__text-wrapper a::before {
+.contacts__office-contact-information a::before {
   content: "";
   width: 18px;
   height: 20px;
@@ -1270,13 +1247,13 @@ input[type="checkbox"]:disabled + label::before {
     opacity: 0.8;
   }
 
-  .cruises__item:hover .cruises__text-wrapper,
-  .cruises__item:focus .cruises__text-wrapper {
+  .cruises__card:hover .cruises__cruise-description,
+  .cruises__card:focus .cruises__cruise-description {
     display: block;
   }
 
-  .cruises__item:hover .cruises__img-wrapper,
-  .cruises__item:focus .cruises__img-wrapper {
+  .cruises__card:hover .cruises__cruise-card-img,
+  .cruises__card:focus .cruises__cruise-card-img {
     display: none;
   }
 
@@ -1294,8 +1271,8 @@ input[type="checkbox"]:disabled + label::before {
     border-radius: 1px;
   }
 
-  .contacts__text-wrapper a:hover,
-  .contacts__text-wrapper a:focus {
+  .contacts__office-contact-information a:hover,
+  .contacts__office-contact-information a:focus {
     opacity: 0.8;
   }
 }
@@ -1314,30 +1291,35 @@ input[type="checkbox"]:disabled + label::before {
     height: 20px;
   }
 
+  .header__nav {
+    width: 501px;
+  }
+
   .header__nav-list a {
     font-size: 14px;
     line-height: 17px;
   }
 
-  .nav__item {
-    margin-right: 22px;
-    margin-bottom: 5px;
-    margin-top: 2px;
-  }
-
-  .nav__item:last-child {
-    margin-right: 0;
+  .nav__list {
+    gap: 23px;
   }
 
   .footer__wrapper {
-    padding: 46px 6%;
+    padding: 48px 6%;
     width: auto;
   }
 
   .footer__logo {
     margin-right: 25px;
+  }
+
+  .footer__logo img {
     width: 38px;
     height: 20px;
+  }
+
+  .footer__nav {
+    width: 450px;
   }
 
   .footer__nav a {
@@ -1345,11 +1327,8 @@ input[type="checkbox"]:disabled + label::before {
     line-height: 15px;
   }
 
-  .social__item {
-    margin-right: 20px;
-    -ms-flex-item-align: end;
-    align-self: flex-end;
-    margin-bottom: 2px;
+  .social__list {
+    gap: 20px;
   }
 
   .social__item svg {
@@ -1361,47 +1340,47 @@ input[type="checkbox"]:disabled + label::before {
     background-image: url("../img/content/promo-tablet.jpg");
   }
 
-  .promo__text-wrapper {
+  .promo__cruises-title {
     padding: 268px 45px 276px;
     width: 768px;
   }
 
-  .promo__text-wrapper h2 {
+  .promo__cruises-title h2 {
     font-size: 50px;
     line-height: 61px;
     margin-bottom: 12px;
   }
 
-  .promo__text-wrapper p {
+  .promo__cruises-title p {
     font-size: 18px;
     line-height: 22px;
   }
 
-  .description__wrapper {
+  .description {
     padding: 90px 6% 92px;
     width: auto;
   }
 
-  .description__text-wrapper {
+  .description__travel-information {
     -ms-flex-item-align: start;
     align-self: flex-start;
     width: 48%;
   }
 
-  .description__wrapper img {
+  .description img {
     width: 324px;
     height: 264px;
     margin-top: 9px;
   }
 
-  .description__text-wrapper h2 {
+  .description__travel-information h2 {
     font-size: 26px;
     line-height: 36px;
-    margin-bottom: 17px;
+    margin-bottom: 16px;
     width: 64%;
   }
 
-  .description__text-wrapper p {
+  .description__travel-information p {
     width: 100%;
   }
 
@@ -1409,80 +1388,79 @@ input[type="checkbox"]:disabled + label::before {
     background-image: url("../img/content/benefits-back-tablet.jpg");
   }
 
-  .benefits__wrapper {
-    padding: 90px 6% 70px;
-    width: auto;
+  .benefits {
+    padding: 90px 6% 100px;
   }
 
-  .benefits__wrapper h2 {
+  .benefits h2 {
     font-size: 26px;
     line-height: 39px;
+    margin-bottom: 50px;
     width: auto;
   }
 
-  .benefits__item {
-    padding: 73px 15px 20px 20px;
-    margin-right: 30px;
-    margin-bottom: 30px;
+  .benefits__cards {
+    gap: 30px;
+    width: 100%;
+  }
+
+  .benefits__card {
+    padding: 25px 15px 20px 20px;
     width: calc((100% - 60px) / 3);
   }
 
-  .benefits__item--liner {
-    background-position: top 28px left 20px;
-    background-size: 21px 26px;
+  .benefits__card-icon {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    margin-bottom: 22px;
+    width: 36px;
+    height: 24px;
   }
 
-  .benefits__item--all-inclusive {
-    background-position: top 31px left 20px;
-    background-size: 33px 19px;
+  .benefits__card-icon svg {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    height: 26px;
   }
 
-  .benefits__item--ship {
-    background-position: top 33px left 20px;
-    background-size: 38px 13px;
-  }
-
-  .benefits__item h3 {
+  .benefits__card h3 {
     line-height: 25px;
     margin-bottom: 9px;
   }
 
-  .benefits__item h3 br {
+  .benefits__card p {
+    width: 100%;
+  }
+
+  .benefits__card h3 br {
     display: block;
   }
 
-  .benefits__item--all-inclusive p {
-    width: auto;
-  }
-
-  .benefits__item--ship p {
-    width: 99%;
-  }
-
-  .cruises__wrapper {
-    padding: 90px 60px 70px;
+  .cruises {
+    padding: 90px 60px 100px;
     width: 768px;
   }
 
-  .cruises__wrapper h2 {
+  .cruises h2 {
     font-size: 26px;
     line-height: 39px;
     margin-bottom: 48px;
   }
 
-  .cruises__item {
+  .cruises__card {
     width: 309px;
   }
 
-  .cruises__item:nth-child(2n) {
-    margin-right: 0;
-  }
-
-  .cruises__img-wrapper img {
+  .cruises__cruise-card-img img {
     width: 309px;
   }
 
-  .cruises__img-wrapper span {
+  .cruises__cruise-card-img span {
     bottom: 27px;
     left: 34px;
   }
@@ -1491,17 +1469,16 @@ input[type="checkbox"]:disabled + label::before {
     background-image: url("../img/content/booking-back-tablet.jpg");
   }
 
-  .booking__wrapper {
+  .booking {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
     padding: 88px 22% 100px;
-    width: auto;
     text-align: center;
   }
 
-  .booking__text-wrapper {
+  .booking__early-booking-information {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1514,12 +1491,13 @@ input[type="checkbox"]:disabled + label::before {
     -ms-flex-item-align: center;
     align-self: center;
     text-align: center;
-    margin-bottom: 51px;
+    margin: 0;
+    margin-bottom: 52px;
     padding-top: 0;
     width: auto;
   }
 
-  .booking__text-wrapper h2 {
+  .booking__early-booking-information h2 {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
@@ -1528,50 +1506,59 @@ input[type="checkbox"]:disabled + label::before {
     margin-bottom: 5px;
   }
 
-  .booking__text-wrapper p {
+  .booking__early-booking-information p {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
   }
 
-  .booking__modal-wrapper {
+  .booking__modal {
     padding: 45px 50px;
     margin: 0 13px;
     width: auto;
     text-align: left;
   }
 
-  .contacts__wrapper {
+  .contacts {
     padding: 100px 6%;
     width: auto;
     text-align: center;
   }
 
-  .contacts__map-wrapper {
+  .contacts__map {
     height: 335px;
     width: 48%;
     background-image: url("../img/content/map-tablet.jpg");
     background-size: 100% 335px;
   }
 
-  .contacts__text-wrapper {
+  .contacts__office-contact-information {
     padding-top: 68px;
     width: 48%;
   }
 
-  .contacts__text-wrapper p {
+  .contacts__office-contact-information p {
     margin-bottom: 27px;
   }
 
-  .contacts__text-wrapper br {
+  .contacts__office-contact-information br {
     display: block;
   }
 
-  .contacts__text-wrapper span::before {
+  .contacts__office-contact-information span {
+    padding-left: 28px;
+  }
+
+  .contacts__office-contact-information span::before {
     top: 3px;
   }
 
-  .contacts__text-wrapper a::before {
+  .contacts__office-contact-information a {
+    margin-bottom: 19px;
+    padding-left: 28px;
+  }
+
+  .contacts__office-contact-information a::before {
     top: 3px;
   }
 }
@@ -1589,7 +1576,7 @@ input[type="checkbox"]:disabled + label::before {
     background-image: url("../img/content/booking-back-tablet-2x.jpg");
   }
 
-  .contacts__map-wrapper {
+  .contacts__map {
     background-image: url("../img/content/map-tablet-2x.jpg");
   }
 }
@@ -1600,10 +1587,13 @@ input[type="checkbox"]:disabled + label::before {
     width: auto;
   }
 
+  .header__logo {
+    margin-right: 0;
+  }
+
   .header__logo img {
     width: 42px;
     height: 32px;
-    margin-right: 0;
   }
 
   .header__nav {
@@ -1621,7 +1611,6 @@ input[type="checkbox"]:disabled + label::before {
   }
 
   .header__nav-list {
-    position: relative;
     padding: 75px 15px 10px;
     background-color: #f9fbfd;
     -webkit-box-sizing: border-box;
@@ -1657,12 +1646,6 @@ input[type="checkbox"]:disabled + label::before {
     display: none;
   }
 
-  .no-js .header__modal {
-    -webkit-box-flex: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-  }
-
   .modal {
     background-image: url("../img/content/menu-back.jpg");
     background-position: center;
@@ -1681,7 +1664,7 @@ input[type="checkbox"]:disabled + label::before {
     scrollbar-width: none;
   }
 
-  .modal__wrapper {
+  .modal__menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1696,10 +1679,12 @@ input[type="checkbox"]:disabled + label::before {
   }
 
   .modal__overlay {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 11%;
     height: 100%;
   }
 
@@ -1749,10 +1734,7 @@ input[type="checkbox"]:disabled + label::before {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     min-height: 100%;
-  }
-
-  .nav__item {
-    margin: 0;
+    gap: 0;
   }
 
   .footer__wrapper {
@@ -1780,44 +1762,47 @@ input[type="checkbox"]:disabled + label::before {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    margin-bottom: 13px;
+    margin-bottom: 14px;
     margin-right: 0;
+  }
+
+  .footer__nav {
+    width: auto;
   }
 
   .footer__nav li {
     margin-bottom: 8px;
   }
 
-  .social__item {
-    margin-right: 18px;
-    margin-bottom: 0;
+  .social__list {
+    gap: 18px;
   }
 
   .promo {
     background-image: url("../img/content/promo-mobile.jpg");
   }
 
-  .promo__text-wrapper {
+  .promo__cruises-title {
     padding: 176px 15px 179px;
     width: 320px;
   }
 
-  .promo__text-wrapper h2 {
+  .promo__cruises-title h2 {
     font-size: 36px;
     line-height: 45px;
     margin-bottom: 11px;
   }
 
-  .promo__text-wrapper br {
+  .promo__cruises-title br {
     display: block;
   }
 
-  .promo__text-wrapper p {
+  .promo__cruises-title p {
     font-size: inherit;
     width: 70%;
   }
 
-  .description__wrapper {
+  .description {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -1826,24 +1811,24 @@ input[type="checkbox"]:disabled + label::before {
     width: auto;
   }
 
-  .description__text-wrapper {
+  .description__travel-information {
     width: 100%;
   }
 
-  .description__wrapper img {
+  .description img {
     margin: 0 auto;
     width: 290px;
     height: 186px;
   }
 
-  .description__text-wrapper h2 {
+  .description__travel-information h2 {
     font-size: 24px;
     line-height: 34px;
     margin-bottom: 15px;
     width: 66%;
   }
 
-  .description__text-wrapper p {
+  .description__travel-information p {
     margin-bottom: 33px;
   }
 
@@ -1851,90 +1836,68 @@ input[type="checkbox"]:disabled + label::before {
     background-image: url("../img/content/benefits-back-mobile.jpg");
   }
 
-  .benefits__wrapper {
+  .benefits {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 57px 5% 35px;
-    width: auto;
+    padding: 57px 5% 65px;
   }
 
-  .benefits__wrapper h2 {
+  .benefits h2 {
     font-size: 24px;
     line-height: 36px;
     margin-bottom: 30px;
   }
 
-  .benefits__list {
+  .benefits__cards {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
 
-  .benefits__item {
-    padding-top: 71px;
+  .benefits__card {
     margin-right: 0;
     width: 100%;
   }
 
-  .benefits__item--liner {
-    background-position: top 25px left 20px;
-  }
-
-  .benefits__item--all-inclusive {
-    background-position: top 28px left 20px;
-  }
-
-  .benefits__item--ship {
-    background-position: top 31px left 20px;
-  }
-
-  .benefits__item--all-inclusive p {
-    width: 90%;
-  }
-
-  .benefits__item--ship p {
-    width: auto;
-  }
-
-  .benefits__item--ship br {
+  .benefits__card br {
     display: block;
   }
 
-  .cruises__wrapper {
+  .cruises {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 57px 25px 35px;
+    padding: 56px 25px 65px;
     width: 320px;
   }
 
-  .cruises__wrapper h2 {
+  .cruises h2 {
     font-size: 24px;
     line-height: 36px;
     margin-bottom: 30px;
   }
 
-  .cruises__list {
+  .cruises__cards {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
   }
 
-  .cruises__item {
+  .cruises__card {
     margin-right: 30px;
     width: 270px;
   }
 
-  .cruises__img-wrapper img {
+  .cruises__cruise-card-img img {
     width: 270px;
   }
 
-  .cruises__img-wrapper span {
+  .cruises__cruise-card-img span {
     bottom: 18px;
     left: 25px;
   }
@@ -1943,55 +1906,55 @@ input[type="checkbox"]:disabled + label::before {
     background-image: url("../img/content/booking-back-mobile.jpg");
   }
 
-  .booking__wrapper {
-    padding: 57px 5% 65px;
+  .booking {
+    padding: 59px 5% 65px;
   }
 
-  .booking__text-wrapper {
+  .booking__early-booking-information {
     margin-bottom: 35px;
   }
 
-  .booking__text-wrapper h2 {
+  .booking__early-booking-information h2 {
     font-size: 24px;
     line-height: 31px;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
   }
 
-  .booking__text-wrapper p {
+  .booking__early-booking-information p {
     font-size: inherit;
     line-height: 22px;
     width: auto;
   }
 
-  .booking__text-wrapper br {
+  .booking__early-booking-information br {
     display: block;
   }
 
-  .booking__modal-wrapper {
+  .booking__modal {
     margin: 0;
     padding: 35px 30px 40px;
     text-align: center;
   }
 
-  .booking__modal-wrapper p {
+  .booking__modal p {
     line-height: 25px;
   }
 
-  .booking__modal-wrapper br {
+  .booking__modal br {
     display: block;
   }
 
-  .form__item input {
+  .form__input input {
     line-height: 31px;
   }
 
-  .form__wrapper {
+  .form__inputs {
     margin-bottom: 27px;
   }
 
   .form__checkbox label {
     padding: 0;
-    padding-left: 26px;
+    padding-left: 27px;
     width: 180px;
   }
 
@@ -2010,32 +1973,40 @@ input[type="checkbox"]:disabled + label::before {
     height: 20px;
   }
 
-  .contacts__wrapper {
+  .contacts {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
-    padding: 59px 5% 70px;
+    padding: 59px 5% 67px;
   }
 
-  .contacts__map-wrapper {
+  .contacts__map {
     height: 316px;
     width: 100%;
     background-image: url("../img/content/map-mobile.jpg");
     background-size: 100% 316px;
   }
 
-  .contacts__text-wrapper {
+  .contacts__office-contact-information {
     padding-top: 0;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     width: 100%;
   }
 
-  .contacts__text-wrapper span::before {
+  .contacts__office-contact-information span {
+    padding-left: 27px;
+  }
+
+  .contacts__office-contact-information span::before {
     top: 5px;
   }
 
-  .contacts__text-wrapper a::before {
+  .contacts__office-contact-information a {
+    padding-left: 27px;
+  }
+
+  .contacts__office-contact-information a::before {
     top: 2px;
   }
 }
@@ -2059,7 +2030,7 @@ input[type="checkbox"]:disabled + label::before {
     background-image: url("../img/content/booking-back-mobile-2x.jpg");
   }
 
-  .contacts__map-wrapper {
+  .contacts__map {
     background-image: url("../img/content/map-mobile-2x.jpg");
   }
 }
@@ -2077,7 +2048,7 @@ input[type="checkbox"]:disabled + label::before {
     background-image: url("../img/content/booking-back-2x.jpg");
   }
 
-  .contacts__map-wrapper {
+  .contacts__map {
     background-image: url("../img/content/map-2x.jpg");
   }
 }

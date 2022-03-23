@@ -1,17 +1,19 @@
 const form = document.querySelector('[data-form]');
-const name = form.querySelector('[data-name]');
-const phone = form.querySelector('[data-phone]');
-const mail = form.querySelector('[data-mail]');
+const name = document.querySelector('[data-name]');
+const phone = document.querySelector('[data-phone]');
+const mail = document.querySelector('[data-mail]');
 
 let isStorageSupport = true;
 let nameData = '';
 let namePhone = localStorage.getItem('phone');
 let nameMail = localStorage.getItem('mail');
 
-try {
-  nameData = localStorage.getItem('name');
-} catch (err) {
-  isStorageSupport = false;
+if (name) {
+  try {
+    nameData = localStorage.getItem('name');
+  } catch (err) {
+    isStorageSupport = false;
+  }
 }
 
 const addDataToLocalStorage = (evt) => {
@@ -28,7 +30,9 @@ const addDataToLocalStorage = (evt) => {
 };
 
 const addSubmitEventListenerOnForm = () => {
-  form.addEventListener('submit', addDataToLocalStorage);
+  if (form) {
+    form.addEventListener('submit', addDataToLocalStorage);
+  }
 };
 
 const addDataToInput = (input, data) => {

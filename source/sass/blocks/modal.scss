@@ -23,7 +23,7 @@
   }
 }
 
-.modal__wrapper {
+.modal__menu {
   @include vp-767 {
     display: flex;
     justify-content: flex-end;
@@ -37,10 +37,11 @@
 
 .modal__overlay {
   @include vp-767 {
+    align-self: flex-start;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 11%;
     height: 100%;
   }
 }

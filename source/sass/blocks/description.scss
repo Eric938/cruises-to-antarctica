@@ -1,4 +1,4 @@
-.description__wrapper {
+.description {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -19,8 +19,9 @@
   }
 }
 
-.description__text-wrapper {
+.description__travel-information {
   align-self: center;
+  overflow: hidden;
 
   @include vp-1365 {
     align-self: flex-start;
@@ -32,7 +33,7 @@
   }
 }
 
-.description__wrapper img {
+.description img {
   width: 560px;
   height: 301px;
   object-fit: cover;
@@ -50,7 +51,7 @@
   }
 }
 
-.description__text-wrapper h2 {
+.description__travel-information h2 {
   font-size: 28px;
   line-height: 42px;
   font-weight: 600;
@@ -61,7 +62,7 @@
   @include vp-1365 {
     font-size: 26px;
     line-height: 36px;
-    margin-bottom: 17px;
+    margin-bottom: 16px;
     width: 64%;
   }
 
@@ -73,7 +74,7 @@
   }
 }
 
-.description__text-wrapper p {
+.description__travel-information p {
   margin: 0;
   width: 512px;
 

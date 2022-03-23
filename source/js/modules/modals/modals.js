@@ -14,6 +14,7 @@ export class Modals {
     this._preventDefault = this._settings[this._settingKey].preventDefault;
     this._eventTimeout = this._settings[this._settingKey].eventTimeout;
 
+    this._documentClickHandler = this._documentClickHandler.bind(this);
     this._modalClickHandler = this._modalClickHandler.bind(this);
 
     this._init();
@@ -101,11 +102,13 @@ export class Modals {
 
     setTimeout(() => {
       this._addListeners(modal);
+      document.addEventListener('click', this._documentClickHandler);
     }, this._eventTimeout);
   }
 
   close(modalName = this._modalName) {
     const modal = document.querySelector(`[data-modal="${modalName}"]`);
+    document.removeEventListener('click', this._documentClickHandler);
 
     if (!modal || !modal.classList.contains('is-active')) {
       return;
