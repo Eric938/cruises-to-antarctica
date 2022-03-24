@@ -2,11 +2,11 @@
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 110px 118px 120px;
-  width: $vp-1366;
+  padding: 110px 40px 120px;
+  width: $vp-1210;
   text-align: left;
 
-  @include vp-1365 {
+  @include vp-1209 {
     padding: 90px 60px 100px;
     width: $vp-768;
   }
@@ -25,7 +25,7 @@
   padding: 0;
   margin: 0 auto 48px;
 
-  @include vp-1365 {
+  @include vp-1209 {
     font-size: 26px;
     line-height: 39px;
     margin-bottom: 48px;
@@ -58,7 +58,7 @@
   position: relative;
 
 
-  @include vp-1365 {
+  @include vp-1209 {
     width: 309px;
   }
 
@@ -73,7 +73,7 @@
   height: 386px;
   object-fit: cover;
 
-  @include vp-1365 {
+  @include vp-1209 {
     width: 309px;
   }
 
@@ -92,7 +92,7 @@
   left: 30px;
   z-index: 2;
 
-  @include vp-1365 {
+  @include vp-1209 {
     bottom: 27px;
     left: 34px;
   }

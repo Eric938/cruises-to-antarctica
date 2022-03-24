@@ -3,11 +3,11 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 117px 103px 123px;
-  width: $vp-1366;
+  padding: 117px 25px 123px;
+  width: $vp-1210;
   text-align: left;
 
-  @include vp-1365 {
+  @include vp-1209 {
     padding: 100px 6%;
     width: auto;
     text-align: center;
@@ -23,7 +23,7 @@
   width: 560px;
   height: 306px;
   background-image: url("../img/content/map.jpg");
-  background-size: 100% 306px;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -32,11 +32,11 @@
     background-image: url("../img/content/map-2x.jpg");
   }
 
-  @include vp-1365 {
+  @include vp-1209 {
     height: 335px;
     width: 48%;
     background-image: url("../img/content/map-tablet.jpg");
-    background-size: 100% 335px;
+    background-position: bottom;
 
     @include retina {
       background-image: url("../img/content/map-tablet-2x.jpg");
@@ -47,10 +47,11 @@
     height: 316px;
     width: 100%;
     background-image: url("../img/content/map-mobile.jpg");
-    background-size: 100% 316px;
+    background-size: contain;
 
     @include retina {
       background-image: url("../img/content/map-mobile-2x.jpg");
+      background-size: cover;
     }
   }
 }
@@ -70,7 +71,7 @@
   padding-top: 77px;
   width: 500px;
 
-  @include vp-1365 {
+  @include vp-1209 {
     padding-top: 68px;
     width: 48%;
   }
@@ -89,7 +90,7 @@
   margin: 0;
   margin-bottom: 33px;
 
-  @include vp-1365 {
+  @include vp-1209 {
     margin-bottom: 27px;
   }
 }
@@ -97,7 +98,7 @@
 .contacts__office-contact-information br {
   display: none;
 
-  @include vp-1365 {
+  @include vp-1209 {
     display: block;
   }
 }
@@ -110,7 +111,7 @@
   padding-left: 28px;
   position: relative;
 
-  @include vp-1365 {
+  @include vp-1209 {
     padding-left: 28px;
   }
 
@@ -129,7 +130,7 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    @include vp-1365 {
+    @include vp-1209 {
       top: 3px;
     }
 
@@ -147,7 +148,7 @@
   margin-bottom: 21px;
   position: relative;
 
-  @include vp-1365 {
+  @include vp-1209 {
     margin-bottom: 19px;
     padding-left: 28px;
   }
@@ -178,7 +179,7 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    @include vp-1365 {
+    @include vp-1209 {
       top: 3px;
     }
 

@@ -503,9 +503,9 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 35px 103px;
+  padding: 35px 25px;
   margin: 0 auto;
-  width: 1366px;
+  width: 1210px;
 }
 
 .header--main-page {
@@ -577,9 +577,9 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 51px 103px;
+  padding: 51px 25px;
   margin: 0 auto;
-  width: 1366px;
+  width: 1210px;
 }
 
 .footer__logo {
@@ -665,8 +665,8 @@ body {
 
 .promo__cruises-title {
   margin: 0 auto;
-  padding: 271px 198px 280px;
-  width: 1366px;
+  padding: 271px 120px 280px;
+  width: 1210px;
   text-align: left;
 }
 
@@ -701,16 +701,13 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 120px 103px;
-  width: 1366px;
+  padding: 120px 25px;
+  width: 1210px;
   text-align: left;
 }
 
 .description__travel-information {
-  -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
-  overflow: hidden;
+  padding-top: 55px;
 }
 
 .description img {
@@ -726,7 +723,7 @@ body {
   font-weight: 600;
   padding: 0;
   margin: 0;
-  margin-bottom: 21px;
+  margin-bottom: 24px;
 }
 
 .description__travel-information p {
@@ -750,7 +747,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 110px 103px 120px;
+  padding: 110px 20px 120px;
   text-align: left;
 }
 
@@ -835,8 +832,8 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   margin: 0 auto;
-  padding: 110px 118px 120px;
-  width: 1366px;
+  padding: 110px 40px 120px;
+  width: 1210px;
   text-align: left;
 }
 
@@ -984,7 +981,7 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 50px 163px;
+  padding: 50px 85px;
   text-align: left;
 }
 
@@ -1130,8 +1127,8 @@ input[type="checkbox"]:disabled + label::before {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 117px 103px 123px;
-  width: 1366px;
+  padding: 117px 25px 123px;
+  width: 1210px;
   text-align: left;
 }
 
@@ -1139,7 +1136,7 @@ input[type="checkbox"]:disabled + label::before {
   width: 560px;
   height: 306px;
   background-image: url("../img/content/map.jpg");
-  background-size: 100% 306px;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
@@ -1277,7 +1274,7 @@ input[type="checkbox"]:disabled + label::before {
   }
 }
 
-@media (max-width: 1365px) {
+@media (max-width: 1209px) {
   .header {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -1362,9 +1359,8 @@ input[type="checkbox"]:disabled + label::before {
   }
 
   .description__travel-information {
-    -ms-flex-item-align: start;
-    align-self: flex-start;
     width: 48%;
+    padding-top: 0;
   }
 
   .description img {
@@ -1529,7 +1525,7 @@ input[type="checkbox"]:disabled + label::before {
     height: 335px;
     width: 48%;
     background-image: url("../img/content/map-tablet.jpg");
-    background-size: 100% 335px;
+    background-position: bottom;
   }
 
   .contacts__office-contact-information {
@@ -1563,7 +1559,7 @@ input[type="checkbox"]:disabled + label::before {
   }
 }
 
-@media (max-width: 1365px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1365px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1365px) and (min-resolution: 192dpi), (max-width: 1365px) and (min-resolution: 2dppx) {
+@media (max-width: 1209px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1209px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1209px) and (min-resolution: 192dpi), (max-width: 1209px) and (min-resolution: 2dppx) {
   .promo {
     background-image: url("../img/content/promo-tablet-2x.jpg");
   }
@@ -1985,7 +1981,7 @@ input[type="checkbox"]:disabled + label::before {
     height: 316px;
     width: 100%;
     background-image: url("../img/content/map-mobile.jpg");
-    background-size: 100% 316px;
+    background-size: contain;
   }
 
   .contacts__office-contact-information {
@@ -2032,6 +2028,7 @@ input[type="checkbox"]:disabled + label::before {
 
   .contacts__map {
     background-image: url("../img/content/map-mobile-2x.jpg");
+    background-size: cover;
   }
 }
 

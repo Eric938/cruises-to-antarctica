@@ -9,7 +9,7 @@
     background-image: url("../img/content/benefits-back-2x.jpg");
   }
 
-  @include vp-1365 {
+  @include vp-1209 {
     background-image: url("../img/content/benefits-back-tablet.jpg");
 
     @include retina {
@@ -28,10 +28,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 110px 103px 120px;
+  padding: 110px 20px 120px;
   text-align: left;
 
-  @include vp-1365 {
+  @include vp-1209 {
     padding: 90px 6% 100px;
   }
 
@@ -50,7 +50,7 @@
   width: 230px;
   align-self: center;
 
-  @include vp-1365 {
+  @include vp-1209 {
     font-size: 26px;
     line-height: 39px;
     margin-bottom: 50px;
@@ -73,7 +73,7 @@
   margin: 0;
   width: 1160px;
 
-  @include vp-1365 {
+  @include vp-1209 {
     gap: 30px;
     width: 100%;
   }
@@ -91,7 +91,7 @@
   background-repeat: no-repeat;
   width: 360px;
 
-  @include vp-1365 {
+  @include vp-1209 {
     padding: 25px 15px 20px 20px;
     width: calc((100% - 60px) / 3);
   }
@@ -109,7 +109,7 @@
   width: 42px;
   height: 32px;
 
-  @include vp-1365 {
+  @include vp-1209 {
     align-items: flex-start;
     margin-bottom: 22px;
     width: 36px;
@@ -118,7 +118,7 @@
 }
 
 .benefits__card-icon svg {
-  @include vp-1365 {
+  @include vp-1209 {
     display: flex;
     justify-content: flex-start;
     height: 26px;
@@ -133,7 +133,7 @@
   margin: 0;
   margin-bottom: 8px;
 
-  @include vp-1365 {
+  @include vp-1209 {
     line-height: 25px;
     margin-bottom: 9px;
   }
@@ -147,7 +147,7 @@
   margin: 0;
   width: 288px;
 
-  @include vp-1365 {
+  @include vp-1209 {
     width: 100%;
   }
 }
@@ -155,7 +155,7 @@
 .benefits__card h3 br {
   display: none;
 
-  @include vp-1365 {
+  @include vp-1209 {
     display: block;
   }
 }

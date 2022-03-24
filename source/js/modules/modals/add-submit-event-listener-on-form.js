@@ -16,17 +16,18 @@ if (name) {
   }
 }
 
-const addDataToLocalStorage = (evt) => {
-  if (!name.value || !phone.value || !mail.value) {
-    evt.preventDefault();
-  } else {
-    if (isStorageSupport) {
+const addDataToLocalStorage = () => {
+  if (isStorageSupport) {
+    if (name) {
       localStorage.setItem('name', name.value);
+    }
+    if (phone) {
       localStorage.setItem('phone', phone.value);
+    }
+    if (mail) {
       localStorage.setItem('mail', mail.value);
     }
   }
-
 };
 
 const addSubmitEventListenerOnForm = () => {

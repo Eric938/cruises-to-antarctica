@@ -9,7 +9,7 @@
     background-image: url("../img/content/promo-2x.jpg");
   }
 
-  @include vp-1365 {
+  @include vp-1209 {
     background-image: url("../img/content/promo-tablet.jpg");
 
     @include retina {
@@ -28,11 +28,11 @@
 
 .promo__cruises-title {
   margin: 0 auto;
-  padding: 271px 198px 280px;
-  width: $vp-1366;
+  padding: 271px 120px 280px;
+  width: $vp-1210;
   text-align: left;
 
-  @include vp-1365 {
+  @include vp-1209 {
     padding: 268px 45px 276px;
     width: $vp-768;
   }
@@ -52,7 +52,7 @@
   margin: 0;
   margin-bottom: 10px;
 
-  @include vp-1365 {
+  @include vp-1209 {
     font-size: 50px;
     line-height: 61px;
     margin-bottom: 12px;
@@ -79,7 +79,7 @@
   color: $color-alice-blue;
   margin: 0;
 
-  @include vp-1365 {
+  @include vp-1209 {
     font-size: 18px;
     line-height: 22px;
   }
