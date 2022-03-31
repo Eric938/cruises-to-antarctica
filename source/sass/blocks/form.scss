@@ -10,6 +10,7 @@
   height: 43px;
   background-color: $color-alice-blue;
   border: none;
+  border-radius: 0;
   cursor: pointer;
 
   @include vp-767 {
@@ -116,7 +117,7 @@ input[type="checkbox"]:disabled + label::before {
   }
 
   input[type="checkbox"]:focus + label::before {
-    outline: 2px solid $color-black;
-    border-radius: 1px;
+    outline: $color-black auto 2px;
+    outline-offset: -1px;
   }
 }

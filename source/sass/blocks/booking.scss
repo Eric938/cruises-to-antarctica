@@ -9,7 +9,7 @@
     background-image: url("../img/content/booking-back-2x.jpg");
   }
 
-  @include vp-1209 {
+  @include vp-1023 {
     background-image: url("../img/content/booking-back-tablet.jpg");
 
     @include retina {
@@ -24,15 +24,22 @@
       background-image: url("../img/content/booking-back-mobile-2x.jpg");
     }
   }
+}
+
+.booking__wrapper {
+  max-width: $vp-1210;
+  width: 100%;
+  margin: 0 auto;
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   padding: 50px 85px;
   text-align: left;
 
-  @include vp-1209 {
+  @include vp-1023 {
     flex-direction: column;
+    justify-content: center;
     padding: 88px 22% 100px;
     text-align: center;
   }
@@ -45,10 +52,10 @@
 
 .booking__early-booking-information {
   padding-top: 162px;
-  margin-right: 136px;
-  width: 500px;
+  width: 48%;
+  max-width: 500px;
 
-  @include vp-1209 {
+  @include vp-1023 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -58,6 +65,7 @@
     margin-bottom: 52px;
     padding-top: 0;
     width: auto;
+    max-width: 100%;
   }
 
   @include vp-767 {
@@ -73,7 +81,7 @@
   margin: 0;
   margin-bottom: 8px;
 
-  @include vp-1209 {
+  @include vp-1023 {
     align-self: center;
     font-size: 34px;
     line-height: 51px;
@@ -91,9 +99,9 @@
   font-size: 18px;
   line-height: 27px;
   margin: 0;
-  width: 355px;
+  max-width: 352px;
 
-  @include vp-1209 {
+  @include vp-1023 {
     align-self: center;
   }
 
@@ -101,6 +109,7 @@
     font-size: inherit;
     line-height: 22px;
     width: auto;
+    max-width: 100%;
   }
 }
 
@@ -119,7 +128,7 @@
   background-color: $color-tangaroa;
   box-shadow: 0 4px 45px 0 fade($color-tangaroa, 15%);
 
-  @include vp-1209 {
+  @include vp-1023 {
     padding: 45px 50px;
     margin: 0 13px;
     width: auto;

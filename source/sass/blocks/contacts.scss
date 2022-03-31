@@ -4,10 +4,11 @@
   justify-content: space-between;
   margin: 0 auto;
   padding: 117px 25px 123px;
-  width: $vp-1210;
+  max-width: $vp-1210;
+  width: 100%;
   text-align: left;
 
-  @include vp-1209 {
+  @include vp-1023 {
     padding: 100px 6%;
     width: auto;
     text-align: center;
@@ -20,7 +21,8 @@
 }
 
 .contacts__map {
-  width: 560px;
+  max-width: 560px;
+  width: 52%;
   height: 306px;
   background-image: url("../img/content/map.jpg");
   background-size: cover;
@@ -32,7 +34,8 @@
     background-image: url("../img/content/map-2x.jpg");
   }
 
-  @include vp-1209 {
+  @include vp-1023 {
+    max-width: 100%;
     height: 335px;
     width: 48%;
     background-image: url("../img/content/map-tablet.jpg");
@@ -69,11 +72,13 @@
   flex-direction: column;
   text-align: left;
   padding-top: 77px;
-  width: 500px;
+  width: 46%;
+  max-width: 500px;
 
-  @include vp-1209 {
+  @include vp-1023 {
     padding-top: 68px;
     width: 48%;
+    max-width: 100%;
   }
 
   @include vp-767 {
@@ -90,7 +95,7 @@
   margin: 0;
   margin-bottom: 33px;
 
-  @include vp-1209 {
+  @include vp-1023 {
     margin-bottom: 27px;
   }
 }
@@ -98,7 +103,7 @@
 .contacts__office-contact-information br {
   display: none;
 
-  @include vp-1209 {
+  @include vp-1023 {
     display: block;
   }
 }
@@ -111,7 +116,7 @@
   padding-left: 28px;
   position: relative;
 
-  @include vp-1209 {
+  @include vp-1023 {
     padding-left: 28px;
   }
 
@@ -130,7 +135,7 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    @include vp-1209 {
+    @include vp-1023 {
       top: 3px;
     }
 
@@ -147,8 +152,9 @@
   padding-left: 28px;
   margin-bottom: 21px;
   position: relative;
+  width: 168px;
 
-  @include vp-1209 {
+  @include vp-1023 {
     margin-bottom: 19px;
     padding-left: 28px;
   }
@@ -179,7 +185,7 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    @include vp-1209 {
+    @include vp-1023 {
       top: 3px;
     }
 

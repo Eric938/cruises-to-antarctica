@@ -1,30 +1,31 @@
 .description {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
   padding: 120px 25px;
-  width: $vp-1210;
+  max-width: $vp-1210;
+  width: 100%;
   text-align: left;
 
-  @include vp-1209 {
+  @include vp-1023 {
     padding: 90px 6% 92px;
-    width: auto;
   }
 
   @include vp-767 {
     flex-direction: column;
     padding: 57px 5% 65px;
-    width: auto;
   }
 }
 
 .description__travel-information {
-  padding-top: 55px;
+  width: 45%;
+  align-self: center;
+  min-height: 190px;
 
-  @include vp-1209 {
+  @include vp-1023 {
     width: 48%;
     padding-top: 0;
+    min-height: auto;
   }
 
   @include vp-767 {
@@ -33,11 +34,11 @@
 }
 
 .description img {
-  width: 560px;
+  max-width: 560px;
   height: 301px;
   object-fit: cover;
 
-  @include vp-1209 {
+  @include vp-1023 {
     width: 324px;
     height: 264px;
     margin-top: 9px;
@@ -57,8 +58,9 @@
   padding: 0;
   margin: 0;
   margin-bottom: 24px;
+  width: 99%;
 
-  @include vp-1209 {
+  @include vp-1023 {
     font-size: 26px;
     line-height: 36px;
     margin-bottom: 16px;
@@ -75,10 +77,12 @@
 
 .description__travel-information p {
   margin: 0;
-  width: 512px;
+  margin-right: 6px;
+  max-width: 512px;
 
-  @include vp-1209 {
-    width: 100%;
+  @include vp-1023 {
+    margin-right: 0;
+    max-width: 100%;
   }
 
   @include vp-767 {

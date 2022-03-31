@@ -3,10 +3,11 @@
   flex-direction: column;
   margin: 0 auto;
   padding: 110px 40px 120px;
-  width: $vp-1210;
+  max-width: $vp-1210;
+  width: 100%;
   text-align: left;
 
-  @include vp-1209 {
+  @include vp-1023 {
     padding: 90px 60px 100px;
     width: $vp-768;
   }
@@ -25,7 +26,7 @@
   padding: 0;
   margin: 0 auto 48px;
 
-  @include vp-1209 {
+  @include vp-1023 {
     font-size: 26px;
     line-height: 39px;
     margin-bottom: 48px;
@@ -39,16 +40,22 @@
 }
 
 .cruises__cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 260px);
+  justify-content: center;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   width: 100%;
+  max-width: 1160px;
   gap: 30px;
 
+  @include vp-1023 {
+    grid-template-columns: repeat(auto-fill, 309px);
+  }
+
   @include vp-767 {
-    flex-direction: column;
+    grid-template-columns: repeat(auto-fill, 270px);
   }
 }
 
@@ -58,12 +65,11 @@
   position: relative;
 
 
-  @include vp-1209 {
+  @include vp-1023 {
     width: 309px;
   }
 
   @include vp-767 {
-    margin-right: 30px;
     width: 270px;
   }
 }
@@ -73,7 +79,7 @@
   height: 386px;
   object-fit: cover;
 
-  @include vp-1209 {
+  @include vp-1023 {
     width: 309px;
   }
 
@@ -92,7 +98,7 @@
   left: 30px;
   z-index: 2;
 
-  @include vp-1209 {
+  @include vp-1023 {
     bottom: 27px;
     left: 34px;
   }
@@ -109,6 +115,14 @@
   padding: 28px 25px 35px;
   height: 386px;
   box-sizing: border-box;
+
+  @include vp-1023 {
+    padding: 30px 35px 35px;
+  }
+
+  @include vp-767 {
+    padding: 28px 25px 35px;
+  }
 }
 
 @media (hover: hover), screen and (min-width: 0\0) {
@@ -121,6 +135,19 @@
   .cruises__card:focus .cruises__cruise-card-img {
     display: none;
   }
+
+  .cruises__card:focus {
+    outline: $color-alice-blue auto 1px;
+    outline-offset: -5px;
+  }
+}
+
+.is-touched .cruises__cruise-description {
+  display: block;
+}
+
+.is-touched .cruises__cruise-card-img {
+  display: none;
 }
 
 .cruises__cruise-description h3 {
@@ -145,6 +172,14 @@
   height: 230px;
   overflow-y: auto;
   margin-right: -20px;
+
+  @include vp-1023 {
+    margin-right: 0;
+  }
+
+  @include vp-767 {
+    width: 218px;
+  }
 }
 
 .cruises__description-list-wrapper {

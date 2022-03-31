@@ -9,7 +9,7 @@
     background-image: url("../img/content/promo-2x.jpg");
   }
 
-  @include vp-1209 {
+  @include vp-1023 {
     background-image: url("../img/content/promo-tablet.jpg");
 
     @include retina {
@@ -29,17 +29,18 @@
 .promo__cruises-title {
   margin: 0 auto;
   padding: 271px 120px 280px;
-  width: $vp-1210;
+  width: 100%;
+  max-width: $vp-1210;
   text-align: left;
 
-  @include vp-1209 {
+  @include vp-1023 {
     padding: 268px 45px 276px;
     width: $vp-768;
   }
 
   @include vp-767 {
-    padding: 176px 15px 179px;
-    width: $vp-320;
+    padding: 176px 5% 179px;
+    width: 100%;
   }
 }
 
@@ -52,7 +53,7 @@
   margin: 0;
   margin-bottom: 10px;
 
-  @include vp-1209 {
+  @include vp-1023 {
     font-size: 50px;
     line-height: 61px;
     margin-bottom: 12px;
@@ -61,15 +62,8 @@
   @include vp-767 {
     font-size: 36px;
     line-height: 45px;
+    margin: 0 auto;
     margin-bottom: 11px;
-  }
-}
-
-.promo__cruises-title br {
-  display: none;
-
-  @include vp-767 {
-    display: block;
   }
 }
 
@@ -79,7 +73,7 @@
   color: $color-alice-blue;
   margin: 0;
 
-  @include vp-1209 {
+  @include vp-1023 {
     font-size: 18px;
     line-height: 22px;
   }
